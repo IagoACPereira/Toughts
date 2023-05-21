@@ -74,6 +74,7 @@ app.get('/', ToughtsController.showToughts)
 
 conn
     .sync()
+    //.sync({ force: true })
     .then(() => {
         app.listen(port)
     })

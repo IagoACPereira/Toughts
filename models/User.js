@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize')
 
 const db = require('../db/conn')
 
-const User = db.define('User', {
+const User = db.define('Users', {
     name: {
         type: DataTypes.STRING,
         require: true,
@@ -11,7 +11,7 @@ const User = db.define('User', {
         type: DataTypes.STRING,
         require: true,
     },
-    senha: {
+    password: {
         type: DataTypes.STRING,
         require: true,
     },
